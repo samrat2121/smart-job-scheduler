@@ -30,6 +30,18 @@ This project focuses on **systems thinking and implementation**, not UI abstract
 
 ---
 
+## 📁 Repository Structure
+```
+smart-job-scheduler/
+├── src/ # C++ source files (scheduler logic)
+├── data/ # Job input files
+├── logs/ # Execution logs for each scheduler
+├── visualization/ # Python scripts + generated Gantt charts
+└── README.md
+```
+
+---
+
 ## 📂 Input Format (`jobs.txt`)
 ```
 jobId arrivalTime burstTime priority
@@ -61,7 +73,7 @@ g++ -std=c++17 main.cpp scheduler.cpp -o scheduler
 
 ### Generate Visualizations (Python)
 ```bash
-python visualize_priority.py
+python visualize.py
 python visualize_rr.py
 ```
 
